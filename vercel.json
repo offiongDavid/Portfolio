@@ -2,18 +2,23 @@
   "version": 2,
   "builds": [
     {
-      "src": "*portfolio.html",
+      "src": "*.html",
       "use": "@vercel/static-build"
     }
+     {
+  "framework": "nodejs"
+}
   ],
   "routes": [
     {
-      "src": "/*portfolio.css",
+      "src": "/*.css",
       "dest": "/*.css"
     },
     {
-      "src": "/*portfolio.js",
+      "src": "/*.js",
       "dest": "/*.js"
     }
+
+   
   ]
 }
